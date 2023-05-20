@@ -1,23 +1,23 @@
 # InstaPageHandlerBot
 A bot telegram for the management of a totally autonomous Instagram pages
 
-## By [RiccardoDominici](https://github.com/RiccardoDominici)
+### By [RiccardoDominici](https://github.com/RiccardoDominici)
 
 # Commands
-    ### Start 
-    Start the bot and instagram login
-    ### Post
-    Start the recurrent publication 
-    ### Post_now
-    Post on instagram now (coming soon)
-    ### Stop_post 
-    Stop recurrent pubblication (coming soon)
-    ### View_error 
-    View error files (coming soon)
-    ### Logout 
-    Delete config files 
-    ### Help 
-    View list of comands
+### Start 
+Start the bot and instagram login
+### Post
+Start the recurrent publication 
+### Post_now
+Post on instagram now (coming soon)
+### Stop_post 
+Stop recurrent pubblication (coming soon)
+### View_error 
+View error files (coming soon)
+### Logout 
+Delete config files 
+### Help 
+View list of comands
 
 # Configurazione
 ## Secrets

@@ -58,7 +58,7 @@ async def post_now_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
        
 #help command
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('List of comands:\nstart - Start the bot and instagram login\npost - Start the recurrent publication\npost_now - Post on instagram now\nview_error - View error files\logout - Delete config files\nhelp - View list of comands\nstop_post - Stop recurrent pubblication')
+    await update.message.reply_text('List of comands:\nstart - Start the bot and instagram login\npost - Start the recurrent publication\npost_now - Post on instagram now\nview_error - View error files\nlogout - Delete config files\nhelp - View list of comands\nstop_post - Stop recurrent pubblication')
 
 #/post command
 async def post_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
