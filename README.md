@@ -6,10 +6,10 @@ A bot telegram for the totally autonomous management of a Instagram pages
 # Commands
 ### Start 
 Start the bot and instagram login
-### Post
-Start the recurrent publication 
 ### Post_now
-Post on instagram now (coming soon)
+Post on instagram now 
+### Post
+Start the recurrent publication (coming soon)
 ### Stop_post 
 Stop recurrent pubblication (coming soon)
 ### View_error 
