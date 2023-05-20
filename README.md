@@ -1,23 +1,23 @@
 # InstaPageHandlerBot
-A bot telegram for the totally autonomous management of a Instagram pages
+A bot telegram for the totally autonomous management of Instagram pages via Deep Learning.
 
 ### By [RiccardoDominici](https://github.com/RiccardoDominici)
 
 # Commands
 ### Start 
-Start the bot and instagram login
+Start the bot and instagram login.
 ### Post_now
-Post on instagram now 
-### Post
-Start the recurrent publication (coming soon)
-### Stop_post 
-Stop recurrent pubblication (coming soon)
-### View_error 
-View error files (coming soon)
+Based on a topic, it generates an image with Dall-e, a caption and hashtags with gpt-3, then it posts all immediately on Instagram. 
+### Post (coming soon)
+Start the recurrent publication of generated posts as written before.
+### Stop_post (coming soon)
+Stop recurrent pubblication.
+### View_error (coming soon)
+View error files.
 ### Logout 
-Delete config files 
+Delete config files. 
 ### Help 
-View list of comands
+View list of comands.
 
 # Configuration
 ## Secrets
