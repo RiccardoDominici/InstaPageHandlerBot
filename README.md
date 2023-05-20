@@ -1,5 +1,5 @@
 # InstaPageHandlerBot
-A bot telegram for the management of a totally autonomous Instagram pages
+A bot telegram for the totally autonomous management of a Instagram pages
 
 ### By [RiccardoDominici](https://github.com/RiccardoDominici)
 
@@ -19,7 +19,7 @@ Delete config files
 ### Help 
 View list of comands
 
-# Configurazione
+# Configuration
 ## Secrets
 
 You simply have to create a ``` secrets.env ``` file and insert all your credentials:
