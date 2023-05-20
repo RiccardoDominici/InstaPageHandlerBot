@@ -35,3 +35,7 @@ PASSWORD_INSTA=Y0ur1nstagramPag3Psw
 ```
 pip3 install -r requirements.txt
 ```
+
+## Telegram setup
+
+View [official guide](https://core.telegram.org/bots#how-do-i-create-a-bot)
