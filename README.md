@@ -1,8 +1,28 @@
 # InstaPageHandlerBot
 A bot telegram for the management of a totally autonomous Instagram pages
 
-## Config
-Now you simply have to create a ``` secrets.env ``` file and insert the token of your telegram bot saved as:
+## By [RiccardoDominici](https://github.com/RiccardoDominici)
+
+# Commands
+    ### Start 
+    Start the bot and instagram login
+    ### Post
+    Start the recurrent publication 
+    ### Post_now
+    Post on instagram now (coming soon)
+    ### Stop_post 
+    Stop recurrent pubblication (coming soon)
+    ### View_error 
+    View error files (coming soon)
+    ### Logout 
+    Delete config files 
+    ### Help 
+    View list of comands
+
+# Configurazione
+## Secrets
+
+You simply have to create a ``` secrets.env ``` file and insert all your credentials:
 ```
 TELEGRAM_TOKEN=YOUR_TELEGRAM_TOKEN
 OPENAI_API_KEY=YOUR_OPENAI_KEY
@@ -10,9 +30,7 @@ BOT_USERNAME=@yourTelegramBotUsername
 USERNAME_INSTA=your.instagram.page.nick
 PASSWORD_INSTA=Y0ur1nstagramPag3Psw
 ```
-
-## Installing requirements
-- Install dependencies:
+## Install dependencies
 
 ```
 pip3 install -r requirements.txt
