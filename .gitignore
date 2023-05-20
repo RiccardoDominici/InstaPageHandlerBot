@@ -1,0 +1,4 @@
+secrets.env
+config
+functions/__pycache__
+image/*
