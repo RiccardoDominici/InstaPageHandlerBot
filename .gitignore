@@ -1,4 +1,7 @@
+.DS_Store
 secrets.env
 config
-functions/__pycache__
 image/*
+functions/__pycache__
+functions/.DS_Store
+
