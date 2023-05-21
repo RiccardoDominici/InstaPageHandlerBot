@@ -31,9 +31,6 @@ How setting up your personal bot.
 pip3 install -r requirements.txt
 ```
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Get your OPENAI API Key at [openai.com](https://platform.openai.com/overview)
 2. Get your Telegram token at [official guide](https://core.telegram.org/bots#how-do-i-create-a-bot)
 3. Clone the repo
