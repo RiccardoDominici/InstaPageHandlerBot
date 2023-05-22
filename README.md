@@ -14,7 +14,7 @@ A bot telegram for the totally autonomous management of Instagram pages via Deep
 * Watch_stories_from_user (coming soon): Watch all the stories of all the followers of a user you specify
 
 ## Getting Started
-How setting up your personal bot.
+How to set up your personal bot.
 
 ### Install dependencies
 ```sh
