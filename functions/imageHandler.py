@@ -1,7 +1,5 @@
 
 import openai
-import sys
-import json
 import os
 from PIL import ImageDraw, ImageFont, Image
 from pathlib import Path
@@ -9,11 +7,21 @@ from base64 import b64decode
 from typing import Final
 from datetime import datetime
 from dotenv import load_dotenv
+from functions import dataHandler
+
+SECRETS_NAME = 'secrets.env'
+DATA_NAME = 'data.json'
 
 # Get path to .env file
 DIRPATH = os.path.dirname(__file__)
-dotenv_path = os.path.join((os.path.abspath(os.path.join(DIRPATH, ".."))), 'secrets.env') 
+dotenv_path = os.path.join((os.path.abspath(os.path.join(DIRPATH, ".."))), SECRETS_NAME) 
 load_dotenv(dotenv_path)
+
+# Get path to data.json file
+data_path = os.path.join((os.path.abspath(os.path.join(DIRPATH, ".."))), DATA_NAME) 
+
+# Load data
+data = dataHandler.load_data(data_path)
 
 # Openai API key
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -44,7 +52,7 @@ def generateImage(IMAGES_FOLDER_PATH):
     
     if Path(image_path).is_file():
          # Caption creation
-        caption_prompt = "create a short description of an instagram post for a motivational page, add hashtags"
+        caption_prompt = data["caption_prompt"]
         
         response = openai.Completion.create(
             engine = "text-davinci-002",
@@ -61,7 +69,7 @@ def generateImage(IMAGES_FOLDER_PATH):
     else:
         
          # Create with gpt the caption
-        caption_prompt = "write a mock motivational sentence where instead of motivating you jokingly insult your readers. do not use punctuation"
+        caption_prompt = data["text_prompt"]
         
         response = openai.Completion.create( #gpt generating
             engine = "text-davinci-002",
@@ -85,7 +93,7 @@ def generateImage(IMAGES_FOLDER_PATH):
         text = text[1:]
 
         # Prompt generating
-        image_prompt = "mountains in sunrise with rice field, ultrawide, trees, river, and a road, oil painting style"
+        image_prompt = data["image_prompt"]
 
         # Image generating
         response = openai.Image.create(
@@ -126,8 +134,8 @@ def generateImage(IMAGES_FOLDER_PATH):
         img.save(image_path)
         
 
-        # caption creation
-        caption_prompt = "create a short description of an instagram post for a motivational page, add hashtags"
+        # Caption creation
+        caption_prompt = data["caption_prompt"]
         
         response = openai.Completion.create(
             engine = "text-davinci-002",
@@ -150,7 +158,6 @@ async def post_image(bot, image_path, caption):
     bot.upload_photo(image_path, caption=caption)
     
 
+# For testing
 if __name__ == '__main__':
-    image_path, caption = generateImage("test");
-    print( image_path, caption)
-    
+    image_path, caption = generateImage(os.path.join((os.path.abspath(os.path.join(DIRPATH, ".."))), "image") )
