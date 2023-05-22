@@ -36,3 +36,11 @@ pip3 install -r requirements.txt
     USERNAME_INSTA=your.instagram.page.nick
     PASSWORD_INSTA=Y0ur1nstagramPag3Psw
     ```
+5. Write your personal prompt in data.json file
+   ```json
+   {
+    "image_prompt": "description of the image background",
+    "text_prompt": "explanation of the text you want above the image",
+    "caption_prompt": "explanation of the caption and the type of hashtags you want"
+   }
+   ```
