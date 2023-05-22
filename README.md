@@ -21,7 +21,7 @@ How to set up your personal bot.
 pip3 install -r requirements.txt
 ```
 
-### Installation
+### Installation and configuration
 1. Get your OPENAI API Key at [openai.com](https://platform.openai.com/overview)
 2. Get your Telegram token by following the [official guide](https://core.telegram.org/bots#how-do-i-create-a-bot)
 3. Clone the repo
@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
     USERNAME_INSTA=your.instagram.page.nick
     PASSWORD_INSTA=Y0ur1nstagramPag3Psw
     ```
-5. Write your personal prompt in data.json file, for example:
+5. Write your personal prompt in (data.json)[https://github.com/RiccardoDominici/InstaPageHandlerBot/blob/main/data.json] file, for example:
    ```json
    {
     "image_prompt": "mountains in sunrise with rice field, ultrawide, trees, river, and a road, oil painting style",
