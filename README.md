@@ -36,11 +36,15 @@ pip3 install -r requirements.txt
     USERNAME_INSTA=your.instagram.page.nick
     PASSWORD_INSTA=Y0ur1nstagramPag3Psw
     ```
-5. Write your personal prompt in (data.json)[https://github.com/RiccardoDominici/InstaPageHandlerBot/blob/main/data.json] file, for example:
+5. Write your personal prompt in data.json file:
    ```json
    {
-    "image_prompt": "mountains in sunrise with rice field, ultrawide, trees, river, and a road, oil painting style",
-    "text_prompt": "write a mock motivational sentence where instead of motivating you jokingly insult your readers. do not use punctuation",
-    "caption_prompt": "create a short description of an instagram post for a motivational page, add hashtags"
+   "image_prompt": "description of the image background",
+   "text_prompt": "explanation of the text you want above the image",
+   "caption_prompt": "explanation of the caption and the type of hashtags you want"
    }
+
    ```
+   [example](https://github.com/RiccardoDominici/InstaPageHandlerBot/blob/main/data.json)
+
+
