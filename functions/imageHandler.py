@@ -157,7 +157,8 @@ async def post_image(bot, image_path, caption):
     # Publication post
     bot.upload_photo(image_path, caption=caption)
     
-
+'''
 # For testing
 if __name__ == '__main__':
     image_path, caption = generateImage(os.path.join((os.path.abspath(os.path.join(DIRPATH, ".."))), "image") )
+'''
