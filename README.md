@@ -55,6 +55,9 @@ pip3 install -r requirements.txt
    "text_prompt": "write a mock motivational sentence where instead of motivating you jokingly insult your readers. do not use punctuation",
    "caption_prompt": "create a short description of an instagram post for a motivational page, add hashtags"
    }
-
-   <a href="https://instagram.com/4u.word" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" height="30" width="40" />
+   ```
+   <p align="center">
+   
+   Watch page: <a href="https://instagram.com/4u.word" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" height="30" width="40" />
    </a>
+    </p>
